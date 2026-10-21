@@ -23,3 +23,6 @@ int main() {
     printf("Ciphertext: %s", text);
     return 0;
 }
+Enter plaintext: HELLO
+Enter key (1-25): 3
+Ciphertext: KHOOR

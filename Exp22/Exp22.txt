@@ -75,7 +75,11 @@ int main(void) {
             printf("%d",(c[i]>>b)&1);
 
     prev=iv;
-    for(int i=0;i<2;i++) {
+    for(int i=0;i<2;i++) {CBC Encryption:
+Ciphertext: 1111010000001011
+
+CBC Decryption:
+Plaintext: 0000000100100011
         d[i]=crypt(c[i],1)^prev;
         prev=c[i];
     }
@@ -86,8 +90,4 @@ int main(void) {
             printf("%d",(d[i]>>b)&1);
     printf("\n");
     return 0;
-}CBC Encryption:
-Ciphertext: 1111010000001011
-
-CBC Decryption:
-Plaintext: 0000000100100011
+}
